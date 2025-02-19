@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechElite</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+
 </head>
 <body>
     <header>
         <div class="menu">
-            <h1>TechElite</h1>
+            <a href="index.html"><img class="logo" src="img/Logotyper/TechElite.grey.svg" alt="Logotyp"></a>
             <nav>
                 <a href="">Start</a>
                 <a href="">Shop</a>
@@ -17,18 +22,18 @@
                 <a href="">Om oss</a>
             </nav>
             <div class="icons">
-                <img src="img/sök.png" alt="Sök">
-                <img src="img/cart.png" alt="Varukorg">
-                <img src="img/account.png" alt="Logga in">
+                <img src="img/search.svg" alt="Sök">
+                <img src="img/cart.svg" alt="Varukorg">
+                <img src="img/account.svg" alt="Logga in">
             </div>
         </div>
         <div class="header-content">
-            <h1>TechElite</h1>
-            <p>INNOVATIVE</p>
-            <p>TOGETHER</p>
+            <div class="img-box">
+                <img src="img/Logotyper/TechElite.grey.alt2.2.svg" alt="Logotyp 2">
+            </div>
             <div class="links">
-                <a href="">Shop</a>
-                <a href="">Sälj</a>
+                <a class="btn" href="">Shop</a>
+                <a class="btn" href="">Sälj</a>
             </div>
         </div>
     </header>
@@ -36,10 +41,10 @@
         <div class="filter">
             <p>Shop</p>
             <div class="filter-icons">
-                <img src="" alt="icon">
-                <img src="" alt="icon">
+                <img src="img/category_blck.svg" alt="icon">
+                <img src="img/filter_blck.svg" alt="icon">
             </div>
-            <img src="img/cart.png" alt="cart">
+            <img src="img/cart_blck.svg" alt="cart">
         </div>
         <article>
             <section>
@@ -143,11 +148,11 @@
         <div class="shortcuts">
             <div class="subscribe">
                 <input type="text" id="subscribe" name="subscribe" value="you@exampel.com">
-                <input type="submit" id="submit" value="Submit">
+                <input class="btn" type="submit" id="submit" value="Submit">
             </div>
             <div class="footer-buttons">
-                <a href="">Sign in</a>
-                <a href="">Register</a>
+                <a class="btn" href="">Sign in</a>
+                <a class="btn" href="">Register</a>
             </div>
         </div>
     </footer>
