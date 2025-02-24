@@ -9,152 +9,131 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div class="menu">
             <a href="index.html"><img class="logo" src="img/Logos/TechElite.grey.svg" alt="Logotyp"></a>
             <nav>
-                <a href="">Start</a>
+                <a href="index.html">Start</a>
                 <a href="">Shop</a>
                 <a href="">Forum</a>
                 <a href="">Om oss</a>
             </nav>
             <div class="icons">
-                <img src="img/Icons/search.svg" alt="Sök">
-                <img src="img/Icons/cart.svg" alt="Varukorg">
-                <img src="img/Icons/account.svg" alt="Logga in">
+                <a href="#"><img src="img/Icons/search.svg" alt="Sök"></a>
+                <a href="#"><img src="img/Icons/cart.svg" alt="Varukorg"></a>
+                <a href="login.html"><img src="img/Icons/account.svg" alt="Logga in"></a>
             </div>
         </div>
-        <div class="header-content">
-            <div class="img-box">
-                <img src="img/Logos/TechElite.grey.alt2.2.svg" alt="Logotyp 2">
-            </div>
-            <div class="links">
-                <a class="btn" href="">Shop</a>
-                <a class="btn" href="">Sälj</a>
-            </div>
+        <div class="links">
+            <a class="" href="#">Bli medlem</a>
+            <a class="" href="#">Orderhistorik</a>
+            <a class="" href="#">Önskelista</a>
+            <a class="" href="#">Mina sidor</a>
+            <a class="" href="#">Mina inlägg</a>
         </div>
     </header>
     <main>
-        <div class="filter">
-            <p>Shop</p>
-            <div class="filter-icons">
-                <img src="img/Icons/category_blck.svg" alt="icon">
-                <img src="img/Icons/filter_blck.svg" alt="icon">
-            </div>
-            <img src="img/Icons/cart_blck.svg" alt="cart">
-        </div>
         <article>
             <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
-            </section>
-            <section>
-                <div></div>
-                <p>Text</p>
-                <p><b>$0</b></p>
-                <p>Body text</p>
+                <div class="left">
+                    <div class="login">Login</div>
+                    <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+                </div>
+                <div class="right">
+                    <svg viewBox="0 0 320 300">
+                        <defs>
+                            <linearGradient
+                                    inkscape:collect="always"
+                                    id="linearGradient"
+                                    x1="13"
+                                    y1="193.49992"
+                                    x2="307"
+                                    y2="193.49992"
+                                    gradientUnits="userSpaceOnUse">
+                                <stop
+                                    style="stop-color:#ff00ff;"
+                                    offset="0"
+                                    id="stop876" />
+                                <stop
+                                    style="stop-color:#ff0000;"
+                                    offset="1"
+                                    id="stop878" />
+                            </linearGradient>
+                        </defs>
+                        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+                    </svg>
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
             </section>
         </article>
     </main>
     <footer>
-        <div class="social-media">
-            <img src="" alt="media">
-            <img src="" alt="media">
-            <img src="" alt="media">
-            <img src="" alt="media">
-        </div>
-        <div class="categories">
-            <p><b>Kategorier</b></p>
-            <p>Nyheter</p>
-            <p>Populäraste varorna</p>
-            <p>Datorer</p>
-            <p>Tillbehör</p>
-            <p>Kategori</p>
-            <p>Kategori</p>
-        </div>
-        <div class="forum">
-            <p><b>Forum</b></p>
-            <p>Registrera dig</p>
-            <p>Logga in</p>
-            <p>Nyheter</p>
-            <p>Orderhistorik</p>
-            <p>Användarvillkor</p>
-            <p>Kontohantering</p>
-        </div>
-        <div class="About">
-            <p><b>Om oss</b></p>
-            <p>Vår historia</p>
-            <p>Våra medarbetare</p>
-            <p>Kontaktinformation</p>
-            <p>Sekretesspolicy och användarvillkor</p>
-            <p>Returpolicy och garanti</p>
-            <p>Vanliga frågor</p>
-        </div>
-        <div class="shortcuts">
-            <div class="subscribe">
-                <input type="text" id="subscribe" name="subscribe" value="you@exampel.com">
-                <input class="btn" type="submit" id="submit" value="Submit">
+        <div class="footer-content">
+            <div class="categories">
+                <p><b>Kategorier</b></p>
+                <a class="footer-cat" href="">Nyheter</a>
+                <a class="footer-cat" href="">Datorer</a>
+                <a class="footer-cat" href="">Tillbehör</a>
+                <a class="footer-cat" href="">Bildskärmar</a>
+                <a class="footer-cat" href="">Konsoler & tillbehör</a>
+                <a class="footer-cat" href="">Telefoner & tablets</a>
+                <a class="footer-cat" href="">Datorkomponenter</a>
+                <a class="footer-cat" href="">Ljud</a>
             </div>
-            <div class="footer-buttons">
-                <a class="btn" href="">Sign in</a>
-                <a class="btn" href="">Register</a>
+            <div class="forum">
+                <p><b>Forum</b></p>
+                <a class="footer-cat" href="">Registrera dig</a>
+                <a class="footer-cat" href="">Logga in</a>
+                <a class="footer-cat" href="">Nyheter</a>
+                <a class="footer-cat" href="">Konto</a>
+                <a class="footer-cat" href="">Användarvillkor</a>
+                <a class="footer-cat" href="">Kontohantering</a>
             </div>
-        </div>
+            <div class="About">
+                <p><b>Om oss</b></p>
+                <a class="footer-cat" href="">Vår historia</a>
+                <a class="footer-cat" href="">Våra medarbetare</a>
+                <a class="footer-cat" href="">Kontaktinformation</a>
+                <a class="footer-cat" href="">Jobba hos oss</a>
+                <a class="footer-cat" href="">Press</a>
+                <a class="footer-cat" href="">Vanliga frågor</a>
+            </div>
+            <div class="Handla">
+                <p><b>Handla hos oss</b></p>
+                <a class="footer-cat" href="">Försäljningsvillkor</a>
+                <a class="footer-cat" href="">Frakt & leverans</a>
+                <a class="footer-cat" href="">Ångerrätt</a>
+                <a class="footer-cat" href="">Garanti</a>
+                <a class="footer-cat" href="">Reklamation</a>
+                <a class="footer-cat" href="">Sekretess & integritet</a>    
+            </div>
+            <div class="shortcuts">
+                <div class="subscribe">
+                    <input type="text" id="subscribe" name="subscribe" value="you@exampel.com">
+                    <input class="btn" type="submit" id="submit" value="Submit">
+                </div>
+                <div class="footer-buttons">
+                    <a class="btn" href="">Sign in</a>
+                    <a class="btn" href="">Register</a>
+                </div>
+                <div class="socials">
+                    <div class="social-media">
+                        <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-instagram" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-envelope" style="font-size: 20px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </footer>
 </body>
 </html>

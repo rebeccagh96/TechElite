@@ -39,7 +39,8 @@ header {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .menu {
@@ -129,28 +130,84 @@ nav a:hover{
 
 article {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     width: 80%;
     margin: auto;
+    padding: 20px;
 }
 
-section {
-    flex-direction: column;
-    background-color: white;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-}
 
-section div {
+#signup {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 150px;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
     background-image: linear-gradient(to bottom right, rgb(253, 244, 255), rgb(228, 255, 250));
+    border-radius: 5px;
+    filter: drop-shadow(1px 4px 5px rgba(0, 0, 0, 0.171));
 }
+
+#username, #password {
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+
+
+#signup input {
+
+    border-radius: 5px;
+    border-color: #e3e3e3ff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#username, #password {
+    height: 30px;
+    width: 80%;
+}
+
+#userrole {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+#role {
+    margin: 1px 10px;
+}
+
+.roles {
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+#role label {
+    border: 1px solid #000;
+}
+
+
+#signup a {
+    color: #9747ffff;
+    text-decoration: underline;
+}
+
+#signup a:hover {
+    font-weight: bold;
+}
+
+#terms {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
 
 .products img {
     max-height: 60%;
