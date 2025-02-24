@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechElite</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -37,48 +39,33 @@
     </header>
     <main>
         <article>
-            <section>
-                <div class="left">
-                    <div class="login">Login</div>
-                    <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
-                </div>
-                <div class="right">
-                    <svg viewBox="0 0 320 300">
-                        <defs>
-                            <linearGradient
-                                    inkscape:collect="always"
-                                    id="linearGradient"
-                                    x1="13"
-                                    y1="193.49992"
-                                    x2="307"
-                                    y2="193.49992"
-                                    gradientUnits="userSpaceOnUse">
-                                <stop
-                                    style="stop-color:#ff00ff;"
-                                    offset="0"
-                                    id="stop876" />
-                                <stop
-                                    style="stop-color:#ff0000;"
-                                    offset="1"
-                                    id="stop878" />
-                            </linearGradient>
-                        </defs>
-                        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-                    </svg>
-                    <div class="form">
-                        <label for="email">Email</label>
-                        <input type="email" id="email">
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-                        <input type="submit" id="submit" value="Submit">
-                    </div>
-            </section>
+            <form id="signup" action="">
+                <h2>Registrera dig</h2>
+                <label for="Username">Användarnamn</label>
+                <input type="text" id="username" name="username" placeholder="Användarnamn" minlength="3" maxlength="20" required>
+                <label for="Password">Lösenord</label>
+                <input type="password" id="password" name="password" placeholder="Lösenord" minlength="8" maxlength="25" required>
+                <label id="userrole" for="userrole">
+                    Kontonivå
+                </label>
+                <div class="roles">
+                    <input type="radio" id="role" name="role" value="admin">
+                    <label for="role">Admin</label>
+                    <input type="radio" id="role" name="role" value="user">
+                    <label for="role">User</label>
+                </div>                
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Jag godkänner <a href="#" target="_blank" rel="noopener noreferrer">användarvillkoren</a>
+                </label>
+                <input type="button" class="btn" id="submit" value="Submit">
+            </form>
         </article>
     </main>
     <footer>
         <div class="footer-content">
             <div class="categories">
-                <p><b>Kategorier</b></p>
+                <h3>Kategorier</h3>
                 <a class="footer-cat" href="">Nyheter</a>
                 <a class="footer-cat" href="">Datorer</a>
                 <a class="footer-cat" href="">Tillbehör</a>
@@ -89,7 +76,7 @@
                 <a class="footer-cat" href="">Ljud</a>
             </div>
             <div class="forum">
-                <p><b>Forum</b></p>
+                <h3>Forum</h3>
                 <a class="footer-cat" href="">Registrera dig</a>
                 <a class="footer-cat" href="">Logga in</a>
                 <a class="footer-cat" href="">Nyheter</a>
@@ -98,7 +85,7 @@
                 <a class="footer-cat" href="">Kontohantering</a>
             </div>
             <div class="About">
-                <p><b>Om oss</b></p>
+                <h3>Om oss</h3>
                 <a class="footer-cat" href="">Vår historia</a>
                 <a class="footer-cat" href="">Våra medarbetare</a>
                 <a class="footer-cat" href="">Kontaktinformation</a>
@@ -107,7 +94,7 @@
                 <a class="footer-cat" href="">Vanliga frågor</a>
             </div>
             <div class="Handla">
-                <p><b>Handla hos oss</b></p>
+                <h3>Handla hos oss</h3>
                 <a class="footer-cat" href="">Försäljningsvillkor</a>
                 <a class="footer-cat" href="">Frakt & leverans</a>
                 <a class="footer-cat" href="">Ångerrätt</a>
@@ -116,6 +103,7 @@
                 <a class="footer-cat" href="">Sekretess & integritet</a>    
             </div>
             <div class="shortcuts">
+                <h3>Nyhetsbrev</h3>
                 <div class="subscribe">
                     <input type="text" id="subscribe" name="subscribe" value="you@exampel.com">
                     <input class="btn" type="submit" id="submit" value="Submit">
