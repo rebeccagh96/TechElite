@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechElite - forum</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/forum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html"><img class="logo" src="img/Logos/TechElite.grey.svg" alt="Logotyp"></a>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="">Shop</a>
+                <a href="forum.html">Forum</a>
+                <a href="">Om oss</a>
+            </nav>
+            <div class="icons">
+                <a href="#"><img src="img/Icons/search.svg" alt="Sök"></a>
+                <a href="#"><img src="img/Icons/cart.svg" alt="Varukorg"></a>
+                <a href="login.html"><img src="img/Icons/account.svg" alt="Logga in"></a>
+            </div>
+        </div>
+        <div class="links">
+            <a class="" href="#">Bli medlem</a>
+            <a class="" href="#">Orderhistorik</a>
+            <a class="" href="#">Önskelista</a>
+            <a class="" href="#">Mina sidor</a>
+            <a class="" href="#">Mina inlägg</a>
+        </div>
+    </header>
+    <main>
+        <article class="forum-menu">
+            <img class="notifications" src="img/Icons/notifications.svg">
+            <img src="img/Icons/search_black.svg">
+            <button class="btn" onclick="showForm()">Skapa tråd</button>
+        </article>
+        <article>
+            <form id="create-thread" action="">
+                <h2>Skapa tråd</h2>
+                <label for="thread-category">Kategori</label>
+                <select name="thread-category" id="thread-category" required>
+                    <option></option>
+                    <option value="products">Produkter</option>
+                    <option value="advice">Tips</option>
+                    <option value="reviews">Recensioner</option>
+                </select>
+                <label for="title">Titel</label>
+                <input type="text" id="title" name="title" minlength="3" maxlength="30" required>
+                <label for="text">Text</label>
+                <input type="text" id="text" name="text"  minlength="5" maxlength="400" required>
+                <input type="button" class="btn" id="submit" value="Publicera">
+            </form>
+        </article>
+        <article>
+            <section>
+                <h4>Senaste</h4>
+                <div>
+                    <a class="new-thread" href="#">Söker tips på hållbar laddare till Iphone 13</a>
+                    <a class="new-thread" href="#">Supersnabb laptop, rekommenderas verkligen!</a>
+                    <a class="new-thread" href="#">Någon som vet vilka hörlurar som har bäst ljud?</a>
+                    <a class="show-more" href="#">Visa mer</a>
+                </div>
+            </section>
+            <section>
+                <h4>Mina trådar</h4>
+                <div>
+                    <a class="my-thread" href="#">Söker tips på hållbar laddare till Iphone 13</a>
+                    <a class="my-thread" href="#">Bästa köpet jag gjort!</a>
+                    <a class="my-thread" href="#">Varför går alltid min laddare sönder?</a>
+                    <a class="show-more" href="#">Visa mer</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="categories">
+                <p><b>Kategorier</b></p>
+                <a class="footer-cat" href="">Nyheter</a>
+                <a class="footer-cat" href="">Datorer</a>
+                <a class="footer-cat" href="">Tillbehör</a>
+                <a class="footer-cat" href="">Bildskärmar</a>
+                <a class="footer-cat" href="">Konsoler & tillbehör</a>
+                <a class="footer-cat" href="">Telefoner & tablets</a>
+                <a class="footer-cat" href="">Datorkomponenter</a>
+                <a class="footer-cat" href="">Ljud</a>
+            </div>
+            <div class="forum">
+                <p><b>Forum</b></p>
+                <a class="footer-cat" href="">Registrera dig</a>
+                <a class="footer-cat" href="">Logga in</a>
+                <a class="footer-cat" href="">Nyheter</a>
+                <a class="footer-cat" href="">Konto</a>
+                <a class="footer-cat" href="">Användarvillkor</a>
+                <a class="footer-cat" href="">Kontohantering</a>
+            </div>
+            <div class="About">
+                <p><b>Om oss</b></p>
+                <a class="footer-cat" href="">Vår historia</a>
+                <a class="footer-cat" href="">Våra medarbetare</a>
+                <a class="footer-cat" href="">Kontaktinformation</a>
+                <a class="footer-cat" href="">Jobba hos oss</a>
+                <a class="footer-cat" href="">Press</a>
+                <a class="footer-cat" href="">Vanliga frågor</a>
+            </div>
+            <div class="Handla">
+                <p><b>Handla hos oss</b></p>
+                <a class="footer-cat" href="">Försäljningsvillkor</a>
+                <a class="footer-cat" href="">Frakt & leverans</a>
+                <a class="footer-cat" href="">Ångerrätt</a>
+                <a class="footer-cat" href="">Garanti</a>
+                <a class="footer-cat" href="">Reklamation</a>
+                <a class="footer-cat" href="">Sekretess & integritet</a>    
+            </div>
+            <div class="shortcuts">
+                <div class="subscribe">
+                    <input type="text" id="subscribe" name="subscribe" value="you@exampel.com">
+                    <input class="btn" type="submit" id="submit" value="Submit">
+                </div>
+                <div class="footer-buttons">
+                    <a class="btn" href="">Sign in</a>
+                    <a class="btn" href="">Register</a>
+                </div>
+                <div class="socials">
+                    <div class="social-media">
+                        <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-instagram" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-envelope" style="font-size: 20px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </footer>
+    <script>
+        function showForm() {
+            document.getElementById("create-thread").style.display = "flex";
+        }
+    </script>
+</body>
+</html>
