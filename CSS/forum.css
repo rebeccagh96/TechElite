@@ -58,21 +58,14 @@ section div {
     filter: drop-shadow(1px 4px 5px rgba(0, 0, 0, 0.171));
 }
 
-#title, #text, #thread-category {
+#title, #thread-category {
     margin-top: 3px;
     margin-bottom: 10px;
     height: 30px;
     width: 80%;
 }
 
-#create-thread input, select {
-    border-radius: 5px;
-    border-color: #e3e3e3ff;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.btn {
+#create-thread input, select, textarea {
     border-radius: 5px;
     border-color: #e3e3e3ff;
     padding-left: 10px;
@@ -80,7 +73,17 @@ section div {
 }
 
 #text {
+    width: 80%;
     height: 150px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+    border-color: #e3e3e3ff;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .new-thread, .my-thread {
