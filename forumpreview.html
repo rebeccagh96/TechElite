@@ -6,6 +6,7 @@
     <title>TechElite - forum</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/forum.css">
+    <link rel="stylesheet" href="CSS/forumpreview.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -37,6 +38,25 @@
         </div>
     </header>
     <main>
+        <article>
+            <section class="information-section">
+                <div class="information-div">
+                    <h2></h2>
+                    <p>
+                        Som medlem får du tillgång till vårt forum där du får tillgång till flera funktioner och 
+                        förmåner som inte är tillgängliga för icke-medlemmar. Här är några exempel på vad du 
+                        får tillgång till som medlem:</p>
+                    <li>Exklusiva diskussionsområden</li>
+                    <li>Möjlighet att skapa trådar och svara på inlägg</li>
+                    <li>Personliga inställningar</li>
+                    <p>
+                        Sammanfattningsvis får du som medlem ett större engagemang i forumets gemenskap samt fler 
+                        funktioner för att interagera med andra.
+                    </p>
+                    <p>Här nedan får du en inblick i hur vårt forum ser ut.</p>
+                </div>
+            </section>
+        </article>
         <article class="forum-menu">
             <img class="notifications" src="img/Icons/notifications.svg">
             <img src="img/Icons/search_black.svg">
@@ -44,6 +64,9 @@
         </article>
         <article>
             <form id="create-thread" action="">
+                <p>OBS går endast att skapa trådar i inloggat läge.</p>
+                <p>Har du inget inlogg? Skaffa ett via länken nedan:</p>
+                <a class="register-link" href="login.html">Registrera dig</a>
                 <h2>Skapa tråd</h2>
                 <label for="thread-category">Kategori</label>
                 <select name="thread-category" id="thread-category" required>
