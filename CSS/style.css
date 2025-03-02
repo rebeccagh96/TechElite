@@ -14,7 +14,13 @@ Rosa-lila #a948b3ff
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Space Grotesk", sans-serif;
     background-color: #e3e3e3ff;
     font-size: 14px;
@@ -32,6 +38,10 @@ header {
     background-image: linear-gradient(to bottom right, #301934ff, #163832ff);
     color: #e3e3e3ff;
 
+}
+
+main {
+    flex-grow: 1;
 }
 
 .logo {
@@ -102,7 +112,7 @@ nav a:hover{
     color: white;
     padding: 8px 14px;
     border-radius: 5px;
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.479));
+    /* filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.479)); */
 }
 
 .btn:hover {
@@ -123,7 +133,7 @@ footer {
     justify-content: center;
     left: 0;
     bottom: 0;
-    position:static;
+    position: relative;
     width: 100%;
     background-image: linear-gradient(to bottom right, #163832ff, #301934ff);
     color: #e3e3e3ff;

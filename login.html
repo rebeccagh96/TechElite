@@ -39,28 +39,61 @@
     </header>
     <main>
         <article>
-            <form id="signup" action="">
-                <h2>Registrera dig</h2>
-                <label for="Username">Användarnamn</label>
-                <input type="text" id="username" name="username" placeholder="Användarnamn" minlength="3" maxlength="20" required>
-                <label for="Password">Lösenord</label>
-                <input type="password" id="password" name="password" placeholder="Lösenord" minlength="8" maxlength="25" required>
-                <label id="userrole" for="userrole">
-                    Kontonivå
-                </label>
-                <div class="roles">
-                    <input type="radio" id="role" name="role" value="admin">
-                    <label for="role">Admin</label>
-                    <input type="radio" id="role" name="role" value="user">
-                    <label for="role">User</label>
-                </div>                
-                <label for="terms">
-                    <input type="checkbox" id="terms" name="terms" required>
-                    Jag godkänner <a href="#" target="_blank" rel="noopener noreferrer">användarvillkoren</a>
-                </label>
-                <input type="button" class="btn" id="submit" value="Submit">
-            </form>
+            <div class="login-container">
+                <div class="information">
+                    <div class="welcome">
+                        <h2>Välkommen till TechElite</h2>
+                        <p>Registrera dig för att få tillgång till exklusiva erbjudanden och nyheter.</p>
+                        <p>Har du redan ett konto? Logga in för att se dina senaste köp och favoriter.</p>
+                    </div>
+                    <div class="forum-preview">
+                        <h2>Forumpreview</h2>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form id="signup">
+                        <h2>Registrera dig</h2>
+                        <label for="username">Användarnamn</label>
+                        <input type="text" id="username" class="username" name="username" placeholder="Användarnamn" minlength="3" maxlength="20" required>
+                        
+                        <label for="password">Lösenord</label>
+                        <input type="password" id="password" class="password" name="password" placeholder="Lösenord" minlength="8" maxlength="25" required>
+                
+                        <label for="userrole">Kontonivå</label>
+                        <div class="roles">
+                            <input type="radio" id="admin" name="role" value="admin">
+                            <label for="admin">Admin</label>
+                            <input type="radio" id="user" name="role" value="user">
+                            <label for="user">User</label>
+                        </div>
+                
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            Jag godkänner <a href="#" target="_blank" rel="noopener noreferrer">användarvillkoren</a>
+                        </label>
+                
+                        <input type="button" class="btn" value="Registrera">
+                        <p><a href="#" id="toggleForm">Har du redan ett konto? Logga in</a></p>
+                    </form>
+                
+                    <form id="login" class="hidden">
+                        <h2>Logga in</h2>
+                        <label for="login-username">Användarnamn</label>
+                        <input type="text" id="login-username" class="username" name="login-username" placeholder="Användarnamn" required>
+                        
+                        <label for="login-password">Lösenord</label>
+                        <input type="password" id="login-password" class="password" name="login-password" placeholder="Lösenord" required>
+                
+                        <input type="button" class="btn" value="Logga in">
+                        <p><a href="#" id="toggleFormBack">Har du inget konto? Registrera dig</a></p>
+                    </form>
+                </div>
+                
+                
+            </div>
+            
         </article>
+        
     </main>
     <footer>
         <div class="footer-content">
@@ -123,5 +156,24 @@
             </div>
         </div>        
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("signup").style.display = "flex";
+            document.getElementById("login").style.display = "none";
+        
+            document.getElementById("toggleForm").addEventListener("click", function (event) {
+                event.preventDefault();
+                document.getElementById("signup").style.display = "none";
+                document.getElementById("login").style.display = "flex";
+            });
+        
+            document.getElementById("toggleFormBack").addEventListener("click", function (event) {
+                event.preventDefault();
+                document.getElementById("login").style.display = "none";
+                document.getElementById("signup").style.display = "flex";
+            });
+        });
+    </script>
+    
 </body>
 </html>
