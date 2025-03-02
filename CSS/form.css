@@ -28,9 +28,10 @@ article {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
     padding: 20px;
     margin: auto;
-    width:100%;
+    height: 320px;
     background-image: linear-gradient(to bottom right, rgb(253, 244, 255), rgb(228, 255, 250));
     border-radius: 5px;
     filter: drop-shadow(1px 4px 5px rgba(0, 0, 0, 0.171));
@@ -54,7 +55,7 @@ article {
     width: 80%;
 }
 
-#userrole {
+#userrole, #forgotPassword {
     margin-top: 10px;
     margin-bottom: 8px;
 }
@@ -67,8 +68,11 @@ article {
     display: flex;
     flex-direction: row;
     row-gap: 10px;
+    column-gap: 5px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
+
 
 #role label {
     border: 1px solid #000;
@@ -80,11 +84,15 @@ article {
     text-decoration: underline;
 }
 
-#signup a:hover, #login a:hover {
+#signup a:hover, #login a:hover, #terms a:hover {
     font-weight: bold;
 }
 
-#terms {
+#toggleForm, #toggleFormBack {
+    margin-top: 8px;
+}
+
+#terms, #remember {
     margin-top: 10px;
     margin-bottom: 15px;
 }
