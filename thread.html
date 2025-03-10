@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechElite - forum</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/forum.css">
+    <link rel="stylesheet" href="CSS/thread.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html"><img class="logo" src="img/Logos/TechElite.grey.svg" alt="Logotyp"></a>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="">Shop</a>
+                <a href="forum.html">Forum</a>
+                <a href="">Om oss</a>
+            </nav>
+            <div class="icons">
+                <a href="#"><img src="img/Icons/search.svg" alt="Sök"></a>
+                <a href="#"><img src="img/Icons/cart.svg" alt="Varukorg"></a>
+                <a href="login.html"><img src="img/Icons/account.svg" alt="Logga in"></a>
+            </div>
+        </div>
+        <div class="links">
+            <a class="" href="#">Bli medlem</a>
+            <a class="" href="#">Orderhistorik</a>
+            <a class="" href="#">Önskelista</a>
+            <a class="" href="#">Mina sidor</a>
+            <a class="" href="myposts.html">Mina inlägg</a>
+        </div>
+    </header>
+    <main>
+        <article class="forum-menu">
+            <img class="notifications" src="img/Icons/notifications.svg" onclick="showNotifications()">
+            <img src="img/Icons/search_black.svg">
+            <button class="btn" onclick="showForm()">Skapa tråd</button>
+        </article>
+        <article id="notification-article">
+            <section>
+                <h4>Notiser</h4>
+                <div>
+                    <p>Nytt inlägg i din tråd: <a class="notification-link" href="thread.html">Varför går alltid min laddare sönder?</a></p>
+                    <p>Nytt inlägg i din tråd: <a class="notification-link" href="#">Söker tips på hållbar laddare till Iphone 13</a></p>
+                    <p>Nytt inlägg i din tråd: <a class="notification-link" href="#">Bästa köpet jag gjort!</a></p>
+                </div>
+            </section>
+        </article>
+        <article>
+            <form id="create-thread" action="">
+                <h2>Skapa tråd</h2>
+                <label for="thread-category">Kategori</label>
+                <select name="thread-category" id="thread-category" required>
+                    <option></option>
+                    <option value="products">Produkter</option>
+                    <option value="advice">Tips</option>
+                    <option value="reviews">Recensioner</option>
+                </select>
+                <label for="title">Titel</label>
+                <input type="text" id="title" name="title" minlength="3" maxlength="30" required>
+                <label for="text">Text</label>
+                <textarea id="text" name="text" rows="5" columns="50"></textarea>
+                <input type="button" class="btn" id="submit" value="Publicera">
+            </form>
+        </article>
+        <article>
+            <section class="thread">
+                <h3>Varför går alltid min laddare sönder?</h3>
+                <div class="thread-div">
+                    <span>
+                        <p class="user">Användare</p>
+                        <p class="date">Datum</p>
+                    </span>
+                    <p>Hej alla!</p>
+                    <p> Jag måste bara få ventilera lite frustration här. Det känns som om jag ständigt har problem med att mina laddare går sönder efter bara några månader. Har verkligen provat flera olika märken, både dyrare och billigare alternativ, men samma sak händer varje gång.
+                        Jag undrar om någon här har samma problem och om ni har några tips för att förhindra att laddarna går sönder så snabbt? Jag vet att man ska vara försiktig med hur man hanterar dem, men ändå verkar de bara sluta fungera. Oftast är det väl kabeln eller själva kontakten som går sönder.
+                        Har någon av er någon erfarenhet av att använda laddare från andra tillverkare än de "vanliga" märkena? Är det verkligen så att de billigare laddarna är mer benägna att gå sönder, eller gör man mer skada genom att använda dem på fel sätt?
+                        All hjälp och tips mottages tacksamt! 
+                    </p>
+                </div>
+                <div class="thread-div">
+                    <span>
+                        <p class="user">Användare</p>
+                        <p class="date">Datum</p>
+                    </span>
+                    <p>Hej! Jag känner verkligen igen mig i ditt problem. Mina laddare verkar också alltid gå sönder, och det spelar ingen roll om jag köper dyrare eller billigare. Efter att ha haft samma problem ett tag började jag fundera på vad som kan vara orsaken, och här är några saker som har hjälpt mig att förlänga livslängden på mina laddare:
+                        Undvik att böja kablarna – Det låter kanske som en självklarhet, men jag märkte att om jag inte rullar ihop eller böjer kablarna på rätt sätt, slits de mycket snabbare. Jag försöker nu alltid att hålla dem raka när jag förvarar dem.
+                        Köp inte de billigaste – Jag vet att det är frestande, men billigare laddare tenderar ofta att vara sämre byggda. Jag har börjat köpa laddare från mer etablerade märken och har märkt att de håller längre, även om de är dyrare.
+                        Använd rätt laddare – Om du använder en laddare som inte är anpassad för din enhet, kan det orsaka överhettning eller överbelastning. Se till att kolla så att den laddare du använder matchar telefonens eller datorns behov.
+                        Undvik att ladda när enheten är för varm – Om jag har haft enheten på länge eller om det är varmt ute, försöker jag undvika att ladda den samtidigt. Det verkar hjälpa att inte belasta både enheten och laddaren samtidigt.
+                        Så ja, jag tror det handlar om både hur man behandlar laddaren och vilket märke man väljer. Förhoppningsvis kan dessa tips hjälpa dig att förlänga livslängden på din laddare!
+                    </p>
+                </div>
+            </section>
+        </article>
+        <article>
+            <form id="create-post">
+                <h3>Skapa inlägg</h3>
+                <label for="post">Inlägg</label>
+                <textarea id="text" name="post" rows="5" columns="50"></textarea>
+                <input type="button" class="btn" id="submit" value="Publicera">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="categories">
+                <p><b>Kategorier</b></p>
+                <a class="footer-cat" href="">Nyheter</a>
+                <a class="footer-cat" href="">Datorer</a>
+                <a class="footer-cat" href="">Tillbehör</a>
+                <a class="footer-cat" href="">Bildskärmar</a>
+                <a class="footer-cat" href="">Konsoler & tillbehör</a>
+                <a class="footer-cat" href="">Telefoner & tablets</a>
+                <a class="footer-cat" href="">Datorkomponenter</a>
+                <a class="footer-cat" href="">Ljud</a>
+            </div>
+            <div class="forum-links">
+                <p><b>Forum</b></p>
+                <a class="footer-cat" href="">Registrera dig</a>
+                <a class="footer-cat" href="">Logga in</a>
+                <a class="footer-cat" href="">Nyheter</a>
+                <a class="footer-cat" href="">Konto</a>
+                <a class="footer-cat" href="">Användarvillkor</a>
+                <a class="footer-cat" href="">Kontohantering</a>
+            </div>
+            <div class="About">
+                <p><b>Om oss</b></p>
+                <a class="footer-cat" href="">Vår historia</a>
+                <a class="footer-cat" href="">Våra medarbetare</a>
+                <a class="footer-cat" href="">Kontaktinformation</a>
+                <a class="footer-cat" href="">Jobba hos oss</a>
+                <a class="footer-cat" href="">Press</a>
+                <a class="footer-cat" href="">Vanliga frågor</a>
+            </div>
+            <div class="Handla">
+                <p><b>Handla hos oss</b></p>
+                <a class="footer-cat" href="">Försäljningsvillkor</a>
+                <a class="footer-cat" href="">Frakt & leverans</a>
+                <a class="footer-cat" href="">Ångerrätt</a>
+                <a class="footer-cat" href="">Garanti</a>
+                <a class="footer-cat" href="">Reklamation</a>
+                <a class="footer-cat" href="">Sekretess & integritet</a>    
+            </div>
+            <div class="shortcuts">
+                <div class="subscribe">
+                    <input type="text" id="subscribe" name="subscribe" value="you@exampel.com">
+                    <input class="btn" type="submit" id="submit" value="Submit">
+                </div>
+                <div class="footer-buttons">
+                    <a class="btn" href="">Sign in</a>
+                    <a class="btn" href="">Register</a>
+                </div>
+                <div class="socials">
+                    <div class="social-media">
+                        <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-linkedin" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-instagram" style="font-size: 20px;"></a>
+                        <a href="#" class="fa fa-envelope" style="font-size: 20px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </footer>
+    <script>
+        function showNotifications() {
+            var notis = document.getElementById("notification-article");
+            if (notis.style.display == "flex") notis.style.display = "none";
+            else notis.style.display = "flex";
+        }
+        function showForm() {
+            var create = document.getElementById("create-thread");
+            if (create.style.display == "flex") create.style.display = "none";
+            else create.style.display = "flex";
+        }
+    </script>
+</body>
+</html>
