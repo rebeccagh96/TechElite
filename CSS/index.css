@@ -50,7 +50,49 @@ h2 {
     text-decoration: underline;
 }
 
+/* Hero Image Style */
+.hero-image {
+    background-image: url ('img/Products/Laptop/Laptop2.svg'); /* Lägg till din bild här */
+    background-size: cover; /* Gör så att bilden täcker hela området */
+    background-position: center; /* Centrerar bilden */
+    height: 100vh; /* Full höjd på fönstret */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Gör texten vit så att den syns på en mörk bild */
+    flex-direction: column; /* Lägger texterna vertikalt */
+}
 
+.hero-image h1 {
+    font-size: 3rem; /* Större text för rubriken */
+    margin-bottom: 20px; /* Skapar utrymme mellan rubriken och beskrivningen */
+}
+
+.hero-image p {
+    font-size: 1.5rem; /* Lite mindre text för beskrivningen */
+    margin-top: 0; /* Tar bort eventuell extra marginal ovanför beskrivningen */
+}
+.shop-now-btn {
+    display: inline-block;
+    background-color: #301934ff; /* En härlig färg för knappen */
+    color: white; /* Vit text */
+    padding: 15px 30px; /* Lite padding för att göra knappen större */
+    font-size: 1.2rem; /* Gör texten lite större */
+    text-align: center;
+    text-decoration: none; /* Ta bort understrykning på länken */
+    border-radius: 5px; /* Rundade hörn för en modern känsla */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition för hover-effekter */
+}
+
+.shop-now-btn:hover {
+    background-color: #ff4b3a; /* Mörkare nyans vid hover */
+    transform: translateY(-5px); /* Liten "pop" effekt när man hovrar */
+}
+
+.shop-now-btn:active {
+    transform: translateY(0); /* Återgår till originalposition när man klickar */
+}
 article {
     display: flex;
     flex-direction: row;
