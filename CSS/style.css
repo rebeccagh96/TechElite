@@ -226,3 +226,13 @@ footer p, .footer-cat{
     font-size: 14px;
     font-family: "Space Grotesk", sans-serif;
 }
+
+.readmore {
+    color: rgb(168, 102, 255);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.readmore:hover {
+    text-decoration: underline;
+}
