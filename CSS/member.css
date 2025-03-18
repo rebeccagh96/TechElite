@@ -107,14 +107,22 @@ input[type="radio"]:checked+label {
     height: calc(50% - 55px);
     border-radius: 0 32px 32px 0;
 }
-  #tab1:checked ~ .marker{transform: translateY(calc(-3 * 56px));}
+  /* #tab1:checked ~ .marker{transform: translateY(calc(1 - 55px));}
   #tab2:checked ~ .marker{transform: translateY(calc(-2 * 55px));}
   #tab3:checked ~ .marker{transform: translateY(calc(-1 * 55px));}
   #tab4:checked ~ .marker{transform: translateY(calc(0 * 55px));}
   #tab5:checked ~ .marker{transform: translateY(calc(1 * 55px));}
   #tab6:checked ~ .marker{transform: translateY(calc(2 * 55px));}
+  #tab7:checked ~ .marker{transform: translateY(calc(3 * 46px))} */
 
 
+  #tab1:checked ~ .marker{transform: translateY(calc(-3.5 * 55.1px));}
+  #tab2:checked ~ .marker{transform: translateY(calc(-2.5 * 55px));}
+  #tab3:checked ~ .marker{transform: translateY(calc(-1.5 * 55px));}
+  #tab4:checked ~ .marker{transform: translateY(calc(-0.5 * 55px));}
+  #tab5:checked ~ .marker{transform: translateY(calc(0.5 * 55px));}
+  #tab6:checked ~ .marker{transform: translateY(calc(1.5 * 55px));}
+  #tab7:checked ~ .marker{transform: translateY(calc(2.5 * 55px))}
 
 
 .content {
