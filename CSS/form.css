@@ -16,25 +16,19 @@ h2 {
 }
 
 
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    padding: 20px;
-}
+
 
 #signup, #login {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-between;
     padding: 20px;
     margin: auto;
-
     background-image: linear-gradient(to bottom right, rgb(253, 244, 255), rgb(228, 255, 250));
     border-radius: 5px;
     filter: drop-shadow(1px 4px 5px rgba(0, 0, 0, 0.171));
+    width: 100%;
+    height: 100%;
 }
 
 .username, .password {
